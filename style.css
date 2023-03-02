@@ -1,68 +1,121 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
     box-sizing: border-box;
 }
-body{
+
+.forMobOnly{
+    display: none;
+}
+
+body {
     background: #0A2333;
 }
-.mainContainer{
+
+.mainContainer {
     width: 65%;
 }
-.mynav{
+
+.mynav {
     width: 65%;
     margin: auto;
 }
-.light-bg{
+
+.light-bg {
     background: white;
 }
-.roundeds{
+
+.roundeds {
     height: 30vh;
 }
-.contentMain{
+
+.contentMain {
     padding: 20px 13px;
 }
-a.nav-link{
+
+a.nav-link {
     font-size: 14px;
 }
-p{
+
+p {
     text-align: justify;
 }
-.adjustit{
+
+.adjustImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.adjustit {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.adjustit p{
+
+.adjustit p {
+    font-size: 13px;
     font-style: italic;
     color: #888;
 }
 
+.addPadding {
+    padding: 40px;
+}
 /* Responsiveness */
 
-@media only screen and (max-width: 600px){
-
-    .mainContainer{
+@media only screen and (max-width: 600px) {
+    
+    .mainContainer {
         width: 100%;
     }
-    .adjustit{
+    
+    .adjustit {
         flex-direction: column;
     }
-    .mynav{
+
+    .mynav {
         width: 100%;
     }
+    .addPadding {
+        padding: 20px;
+    }
+    .forMobOnly{
+        display: block;
+    }
+    
+.adjustImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
 }
 
-@media only screen and (max-width: 780px){
-
-    .mainContainer{
+@media only screen and (max-width: 780px) {
+    
+    .mainContainer {
         width: 100%;
     }
-    .adjustit{
+    
+    .adjustit {
         flex-direction: column;
     }
-    .mynav{
+    
+    .addPadding {
+        padding: 20px;
+    }
+    .mynav {
         width: 100%;
     }
+    .forMobOnly{
+        display: block;
+    }
+    
+.adjustImage {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
 }
