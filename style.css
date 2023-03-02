@@ -75,6 +75,13 @@ p{
     background: #0A2333;
     color: #fff;
 }
+.imageHolder{
+    display: flex;
+    justify-content: center;
+    align-items: center;flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
 
 /* Responsiveness */
 
